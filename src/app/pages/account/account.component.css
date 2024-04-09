@@ -1,62 +1,66 @@
-body, html {
-    height: 100%;
-    margin: 0;
-    font-family: Rubik, sans-serif;
-    /* background: #000; */
-  }
-  
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-  }
-  
-  .heading-box {
-    width: 375px;
-    height: 68px;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-  
-  .profile-info {
-    display: flex;
-    align-items: center;
-  }
-  
-  .profile-picture {
-    position: relative;
-  }
-  
-  .profile-picture img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-  }
-  
-  .camera-icon {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      /* font-size: 20px; */
-      background-image: url('../../../assets/Group.png');
-      width: 21px;
-      height: 23px;
-      background-size: cover;
-    background-color: white;
-    border-radius: 50%;
-    padding: 5px;
-  }
-  
-  .details {
-    margin-left: 20px;
-  }
-  
-  .description {
-    width: 375px;
-    text-align: left;
-  }
+.profile-container {
+  font-family: 'Rubik', sans-serif;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto; 
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f7f8f9;
+}
+
+.heading {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 21px;
+  color: #1D2226;
+  margin-bottom: 20px;
+  background-color: #ffff;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-picture {
+  position: relative; 
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  background: url('../../../assets/Ellipse.png') no-repeat center center;
+  background-size: cover;
+  margin-right: 16px; 
+}
+
+.icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 21px;
+  height: 23px;
+  background: url('../../../assets/Group.png') no-repeat center center;
+  background-size: contain;
+}
+
+.name {
+  font-size: 15px;
+  line-height: 19px;
+  color: #1D2226;
+  font-weight: 500;
+}
+
+.email {
+  font-size: 14px;
+  line-height: 19px;
+  color: #1D2226;
+}
+
+.description {
+  font-size: 14px;
+  line-height: 22px;
+  color: #1D2226;
+  margin-top: 20px;
+  text-transform: capitalize;
+  text-align: left;
+}
