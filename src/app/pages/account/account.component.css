@@ -1,0 +1,62 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Rubik, sans-serif;
+    /* background: #000; */
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .heading-box {
+    width: 375px;
+    height: 68px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-picture {
+    position: relative;
+  }
+  
+  .profile-picture img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+  
+  .camera-icon {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      /* font-size: 20px; */
+      background-image: url('../../../assets/Group.png');
+      width: 21px;
+      height: 23px;
+      background-size: cover;
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+  }
+  
+  .details {
+    margin-left: 20px;
+  }
+  
+  .description {
+    width: 375px;
+    text-align: left;
+  }

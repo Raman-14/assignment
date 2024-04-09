@@ -1,0 +1,44 @@
+<body>
+    <div class="container">
+      <form class="account-form">
+        <h2>Create your PopX account</h2>
+        
+        <div class="textOnInput">
+          <label for="fullname">Full Name*</label>
+          <input class="form-control" type="text" id="fullname" name="fullname" required>
+        </div>
+        
+        <div class="textOnInput">
+          <label for="phone">Phone number*</label>
+          <input class="form-control" type="tel" id="phone" name="phone" required>
+        </div>
+        
+        <div class="textOnInput">
+          <label for="email">Email address*</label>
+          <input class="form-control" type="email" id="email" name="email" required>
+        </div>
+        
+        <div class="textOnInput">
+          <label for="password">Password*</label>
+          <input class="form-control" type="password" id="password" name="password" required>
+        </div>
+        
+        <div class="textOnInput">
+          <label for="company">Company name</label>
+          <input class="form-control" type="text" id="company" name="company">
+        </div>
+        
+        <fieldset class="agency-fieldset">
+          <legend>Are you an Agency?*</legend>
+          <label for="yes">Yes</label>
+          <input type="radio" id="yes" name="agency" value="yes" required>
+          
+          <label for="no">No</label>
+          <input type="radio" id="no" name="agency" value="no" required>
+        </fieldset>
+        
+        <button type="submit" [routerLink]="'/account'">Create Account</button>
+      </form>
+    </div>
+    </body>
+    
