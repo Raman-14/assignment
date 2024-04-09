@@ -26,10 +26,10 @@ body, html {
     margin-top: 40px;
   }
   
-  /* Floating label styles */
+
   .textOnInput {
     position: relative;
-    margin-bottom: 30px; /* Increase spacing to accommodate the label */
+    margin-bottom: 30px; 
   }
   
   .textOnInput label {
@@ -37,10 +37,10 @@ body, html {
     top: -8px;
     left: 0;
     margin:0 0.5rem;
-    padding: 0 0.50rem; /* Adjust padding and size to match the design */
+    padding: 0 0.50rem; 
     z-index: 1;
-    transition: top 0.3s, font-size 0.3s; /* Smooth transition for label movement */
-    font-size: 13px; /* Match your label font size */
+    transition: top 0.3s, font-size 0.3s; 
+    font-size: 13px; 
     color: #6c25ff;
     font: normal normal normal 13px/17px sans-serif;
   }
@@ -48,11 +48,11 @@ body, html {
   .textOnInput label:after {
     content: " ";
     background-color: #fff;
-    width: calc(100% - 1.5rem); /* Adjust width to account for padding */
+    width: calc(100% - 1.5rem); 
     height: 100%;
     position: absolute;
     left: 0;
-    bottom: 7px; /* Adjust bottom position to cover input border */
+    bottom: 7px;
     z-index: -1;
   }
   
@@ -62,16 +62,15 @@ body, html {
     padding: 1.25rem 0.75rem;
     border: 1px solid #cbcbcb;
     border-radius: 6px;
-    box-shadow: none !important; /* Remove any default box shadows */
+    box-shadow: none !important; 
   }
   
-  .form-control:focus + label, /* When the input is focused, move the label */
-  .form-control:not(:placeholder-shown) + label { /* Also when the input is not empty */
+  .form-control:focus + label, 
+  .form-control:not(:placeholder-shown) + label { 
     top: -20px;
-    font-size: 12px; /* Make the label smaller */
+    font-size: 12px;
   }
   
-  /* Styles for the rest of the form elements */
   .agency-fieldset {
     border: none;
     /* margin: 20px 0; */
